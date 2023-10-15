@@ -5,53 +5,60 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float movementSpeed = 5;
+    public float jumpSpeed = 13;
+    public int coin;
+    public int lives = 3;
+
+    public bool isGrounded;
+
+    Animator animator;
+
+    float movementInput;
+
+    Rigidbody2D rb;
+
     // Start is called before the first frame update
-
-    public Rigidbody2D rb;
-    public Transform groundCheck;
-    public LayerMask platformLayer;
-
-    private float horizontal, speed = 8f, jumpPower = 16f;
-    private bool isFacingRight = true; 
-
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        isGrounded = Physics2D.CircleCast(transform.position, 0.77f, Vector2.down, 0.05f);
+        rb.velocity = new Vector2(movementInput * movementSpeed, rb.velocity.y);
 
-        if(!isFacingRight && horizontal > 0f) 
-            Flip();
-        else if (isFacingRight && horizontal < 0f)
-            Flip();
-        
+        animator.SetFloat("Horizontal", rb.velocity.x);
     }
 
-    public void Jump(InputAction.CallbackContext context) 
+    void OnJump()
     {
-        if (context.performed && isGrounded()) rb.velocity = new Vector2(rb.velocity.x, jumpPower);
-        if (context.canceled && rb.velocity.y > 0f) rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f); 
-    }
-    private bool isGrounded()
-    {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, platformLayer);
+        if (isGrounded)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+        }
     }
 
-    private void Flip()
+    void OnMove(InputValue value)
     {
-        isFacingRight = !isFacingRight;
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1f;
-        transform.localScale = localScale;
+        movementInput = value.Get<float>();
     }
 
-    public void Move(InputAction.CallbackContext context)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        horizontal = context.ReadValue<Vector2>().x;
+        if (collision.tag == "Coin")
+        {
+            coin++;
+            collision.gameObject.SetActive(false);
+        }
+
+        if (collision.tag == "Death")
+        {
+            lives--;
+        }
 
     }
 }

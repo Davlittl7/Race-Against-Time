@@ -488,7 +488,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      coin_spritesheet_0: -1101872366054153420
+      coin_spritesheet_1: 7915989657127587992
+      coin_spritesheet_10: 8409196982569503779
+      coin_spritesheet_11: 8312269031834169960
+      coin_spritesheet_12: -6673069878090355191
+      coin_spritesheet_13: -8580827683236175990
+      coin_spritesheet_14: -2375471962883130855
+      coin_spritesheet_15: -7583573359008115642
+      coin_spritesheet_2: 4084560390645468981
+      coin_spritesheet_3: -3086084001926509910
+      coin_spritesheet_4: 4019278454818917449
+      coin_spritesheet_5: -2329385859126248899
+      coin_spritesheet_6: -2197899805175612126
+      coin_spritesheet_7: -3495933436890173537
+      coin_spritesheet_8: 4618865914775795391
+      coin_spritesheet_9: -6456906534679991429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

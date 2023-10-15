@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: fb9637bb83a61574d97247c72e7eb9d5
+guid: c08330731012ea645bc9162d5e6b3714
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 733841565409193106
-    second: School_Spritesheet_0
+      213: 3143845919807091382
+    second: De'aaron_Spritesheet_2_0
   - first:
-      213: 3666878537130989340
-    second: School_Spritesheet_1
+      213: 2077928812520593839
+    second: De'aaron_Spritesheet_2_1
   - first:
-      213: 6166686999587996536
-    second: School_Spritesheet_2
+      213: -7140864413918662349
+    second: De'aaron_Spritesheet_2_2
   - first:
-      213: 4578383980642146946
-    second: School_Spritesheet_3
+      213: -1225903408828861131
+    second: De'aaron_Spritesheet_2_3
+  - first:
+      213: -3047254683636026173
+    second: De'aaron_Spritesheet_2_4
+  - first:
+      213: -8883566441021964799
+    second: De'aaron_Spritesheet_2_5
+  - first:
+      213: 3340039938453043288
+    second: De'aaron_Spritesheet_2_6
+  - first:
+      213: 3355651796506327493
+    second: De'aaron_Spritesheet_2_7
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -107,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: School_Spritesheet_0
+      name: De'aaron_Spritesheet_2_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 0
-        width: 202
-        height: 249
+        x: 39
+        y: 151
+        width: 50
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29ca1a304012f2a00800000000000000
-      internalID: 733841565409193106
+      spriteID: 6b2b9ae053f21ab20800000000000000
+      internalID: 3143845919807091382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: School_Spritesheet_1
+      name: De'aaron_Spritesheet_2_1
       rect:
         serializedVersion: 2
-        x: 283
-        y: 0
-        width: 202
-        height: 249
+        x: 167
+        y: 151
+        width: 50
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1752300a9e53e230800000000000000
-      internalID: 3666878537130989340
+      spriteID: fa9d6d2ee3946dc10800000000000000
+      internalID: 2077928812520593839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: School_Spritesheet_2
+      name: De'aaron_Spritesheet_2_2
       rect:
         serializedVersion: 2
-        x: 535
-        y: 0
-        width: 202
-        height: 253
+        x: 295
+        y: 151
+        width: 50
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87346735729749550800000000000000
-      internalID: 6166686999587996536
+      spriteID: 331762346ad86ec90800000000000000
+      internalID: -7140864413918662349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: School_Spritesheet_3
+      name: De'aaron_Spritesheet_2_3
       rect:
         serializedVersion: 2
-        x: 795
-        y: 0
-        width: 202
-        height: 249
+        x: 423
+        y: 151
+        width: 50
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +196,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28a938b19ffa98f30800000000000000
-      internalID: 4578383980642146946
+      spriteID: 535b0d34857bcfee0800000000000000
+      internalID: -1225903408828861131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: De'aaron_Spritesheet_2_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 23
+        width: 50
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4bab1a20af5b5d0800000000000000
+      internalID: -3047254683636026173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: De'aaron_Spritesheet_2_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 23
+        width: 50
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10efd48936b37b480800000000000000
+      internalID: -8883566441021964799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: De'aaron_Spritesheet_2_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 23
+        width: 50
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8587c13b0a43a5e20800000000000000
+      internalID: 3340039938453043288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: De'aaron_Spritesheet_2_7
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 23
+        width: 50
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c939a8a78ba19e20800000000000000
+      internalID: 3355651796506327493
       vertices: []
       indices: 
       edges: []
@@ -200,11 +296,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      School_Spritesheet_0: 733841565409193106
-      School_Spritesheet_1: 3666878537130989340
-      School_Spritesheet_2: 6166686999587996536
-      School_Spritesheet_3: 4578383980642146946
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

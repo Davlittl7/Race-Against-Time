@@ -224,7 +224,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Race_Against_Time_Tilemap_0: 892483964186000277
+      Race_Against_Time_Tilemap_1: 3103411404478072243
+      Race_Against_Time_Tilemap_2: -6253223860778093364
+      Race_Against_Time_Tilemap_3: -1729889665359038428
+      Race_Against_Time_Tilemap_4: -7778286378844127293
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
