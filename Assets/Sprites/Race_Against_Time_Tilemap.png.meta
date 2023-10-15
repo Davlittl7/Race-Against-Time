@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: -1729889665359038428
     second: Race_Against_Time_Tilemap_3
+  - first:
+      213: -7778286378844127293
+    second: Race_Against_Time_Tilemap_4
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -110,10 +113,10 @@ TextureImporter:
       name: Race_Against_Time_Tilemap_0
       rect:
         serializedVersion: 2
-        x: 127
-        y: 203
-        width: 66
-        height: 34
+        x: 0
+        y: 191
+        width: 65
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,10 +134,10 @@ TextureImporter:
       name: Race_Against_Time_Tilemap_1
       rect:
         serializedVersion: 2
-        x: 63
-        y: 127
+        x: 127
+        y: 203
         width: 66
-        height: 66
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,7 +156,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 191
-        y: 63
+        y: 127
         width: 65
         height: 66
       alignment: 0
@@ -186,6 +189,27 @@ TextureImporter:
       bones: []
       spriteID: 428b7a3c3823ef7e0800000000000000
       internalID: -1729889665359038428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Race_Against_Time_Tilemap_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf7cb3efb9fd0490800000000000000
+      internalID: -7778286378844127293
       vertices: []
       indices: 
       edges: []
