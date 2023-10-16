@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(movementInput * movementSpeed, rb.velocity.y);
 
         animator.SetFloat("Horizontal", rb.velocity.x);
+        animator.SetFloat("Vertical", rb.velocity.y);
+        //animator.GetFloat("Horizontal");
     }
 
     void OnJump()

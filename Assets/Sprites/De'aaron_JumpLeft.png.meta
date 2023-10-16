@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 534203d6555223b4dbb1cca0e1542d35
+guid: edd49dd19447ced40a1aee9e3e87b922
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6064488825098840807
-    second: De'aaron_Spritesheet_0
-  - first:
-      213: 3075347371188567483
-    second: De'aaron_Spritesheet_1
-  - first:
-      213: 2704696502015222084
-    second: De'aaron_Spritesheet_2
-  - first:
-      213: 3604927337396577851
-    second: De'aaron_Spritesheet_3
+      213: 8325328365977174641
+    second: De'aaron_JumpLeft_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -107,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: De'aaron_Spritesheet_0
+      name: De'aaron_JumpLeft_0
       rect:
         serializedVersion: 2
-        x: 79
-        y: 47
+        x: 71
+        y: 55
         width: 98
-        height: 154
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,71 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7eaa7549474692450800000000000000
-      internalID: 6064488825098840807
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: De'aaron_Spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 335
-        y: 47
-        width: 98
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bbd30a4e324ddaa20800000000000000
-      internalID: 3075347371188567483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: De'aaron_Spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 591
-        y: 47
-        width: 98
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 441ebd37323098520800000000000000
-      internalID: 2704696502015222084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: De'aaron_Spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 847
-        y: 47
-        width: 98
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b362e9a4056470230800000000000000
-      internalID: 3604927337396577851
+      spriteID: 1728d841a02898370800000000000000
+      internalID: 8325328365977174641
       vertices: []
       indices: 
       edges: []
@@ -200,11 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      De'aaron_Spritesheet_0: 6064488825098840807
-      De'aaron_Spritesheet_1: 3075347371188567483
-      De'aaron_Spritesheet_2: 2704696502015222084
-      De'aaron_Spritesheet_3: 3604927337396577851
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
