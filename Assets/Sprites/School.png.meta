@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 423601038e4b15e41a35fb144d407e3e
+guid: c7635e3883b11524fbf4fd6d7e0b2e3a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7729026915365299882
-    second: School_Spritesheet 1_0
+      213: 733841565409193106
+    second: School_Spritesheet_0
   - first:
-      213: 7738334930081184193
-    second: School_Spritesheet 1_1
+      213: 3666878537130989340
+    second: School_Spritesheet_1
   - first:
-      213: 5236240318026767208
-    second: School_Spritesheet 1_2
+      213: 6166686999587996536
+    second: School_Spritesheet_2
   - first:
-      213: -1272858547646681608
-    second: School_Spritesheet 1_3
+      213: 4578383980642146946
+    second: School_Spritesheet_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: School_Spritesheet 1_0
+      name: School_Spritesheet_0
       rect:
         serializedVersion: 2
         x: 23
@@ -121,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 659d73a78fafcb490800000000000000
-      internalID: -7729026915365299882
+      spriteID: 29ca1a304012f2a00800000000000000
+      internalID: 733841565409193106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: School_Spritesheet 1_1
+      name: School_Spritesheet_1
       rect:
         serializedVersion: 2
         x: 283
@@ -142,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c97c749e96146b60800000000000000
-      internalID: 7738334930081184193
+      spriteID: c1752300a9e53e230800000000000000
+      internalID: 3666878537130989340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: School_Spritesheet 1_2
+      name: School_Spritesheet_2
       rect:
         serializedVersion: 2
         x: 539
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86b509293dcdaa840800000000000000
-      internalID: 5236240318026767208
+      spriteID: 87346735729749550800000000000000
+      internalID: 6166686999587996536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: School_Spritesheet 1_3
+      name: School_Spritesheet_3
       rect:
         serializedVersion: 2
         x: 795
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8fd233215e5e55ee0800000000000000
-      internalID: -1272858547646681608
+      spriteID: 28a938b19ffa98f30800000000000000
+      internalID: 4578383980642146946
       vertices: []
       indices: 
       edges: []
@@ -201,10 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      School_Spritesheet 1_0: -7729026915365299882
-      School_Spritesheet 1_1: 7738334930081184193
-      School_Spritesheet 1_2: 5236240318026767208
-      School_Spritesheet 1_3: -1272858547646681608
+      School_Spritesheet_0: 733841565409193106
+      School_Spritesheet_1: 3666878537130989340
+      School_Spritesheet_2: 6166686999587996536
+      School_Spritesheet_3: 4578383980642146946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

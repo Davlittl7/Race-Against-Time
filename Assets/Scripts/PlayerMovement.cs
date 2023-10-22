@@ -33,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Horizontal", rb.velocity.x);
         animator.SetFloat("Vertical", rb.velocity.y);
-        //animator.GetFloat("Horizontal");
     }
 
     void OnJump()
