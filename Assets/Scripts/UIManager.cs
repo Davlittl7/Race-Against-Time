@@ -6,12 +6,14 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI coinText;
+    public TextMeshProUGUI livesText;
     public PlayerMovement player;
 
     // Update is called once per frame
     void Update()
     {
-        text.text = "Coins: " + player.coin.ToString();
+        coinText.text = "Coins: " + player.coin.ToString();
+        livesText.text = "Lives: " + player.lives.ToString();
     }
 }

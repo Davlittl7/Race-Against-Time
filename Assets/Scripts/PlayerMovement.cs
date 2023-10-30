@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed = 5;
     public float jumpSpeed = 13;
     public int coin;
-    public int lives = 3;
+    public int lives = 1;
 
     public bool isGrounded;
 
@@ -59,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.tag == "Death")
         {
             lives--;
+            SceneManager.LoadScene(0);
         }
 
     }
