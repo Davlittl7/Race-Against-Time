@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed = 5;
     public float jumpSpeed = 13;
+    private float radius = 0.77f;
     public int coin;
     public int lives = 1;
 
@@ -24,12 +25,13 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        if (SceneManager.GetActiveScene().buildIndex != 0) radius = 0.79f;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        isGrounded = Physics2D.CircleCast(transform.position, 0.77f, Vector2.down, 0.05f);
+        isGrounded = Physics2D.CircleCast(transform.position, radius, Vector2.down, 0.05f);
         rb.velocity = new Vector2(movementInput * movementSpeed, rb.velocity.y);
 
         animator.SetFloat("Horizontal", rb.velocity.x);
@@ -60,8 +62,13 @@ public class PlayerMovement : MonoBehaviour
         if (collision.tag == "Death")
         {
             lives--;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
+        if(collision.tag == "Finish")
+        {
+            //currLevel++;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }
