@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded)
         {
+            transform.parent = null;
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
         }
     }
@@ -70,5 +71,15 @@ public class PlayerMovement : MonoBehaviour
             //currLevel++;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Platform") transform.parent = collision.transform;
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Platform") transform.parent = null;
     }
 }
