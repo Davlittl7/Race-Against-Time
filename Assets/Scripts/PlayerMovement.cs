@@ -42,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded)
         {
-            transform.parent = null;
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
         }
     }
