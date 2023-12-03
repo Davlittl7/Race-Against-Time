@@ -60,11 +60,11 @@ public class PlayerMovement : MonoBehaviour
             collision.gameObject.SetActive(false);
         }
 
-        if (collision.tag == "Death")
+        /*if (collision.tag == "Death")
         {
             lives--;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        }*/
 
         if(collision.tag == "Finish")
         {
