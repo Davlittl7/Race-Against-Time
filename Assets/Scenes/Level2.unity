@@ -27657,6 +27657,7 @@ GameObject:
   - component: {fileID: 1553695918}
   - component: {fileID: 1553695920}
   - component: {fileID: 1553695919}
+  - component: {fileID: 1553695921}
   m_Layer: 0
   m_Name: DeathCam
   m_TagString: Death
@@ -27777,6 +27778,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1553695921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553695917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f4af9c8127abc499ec461c16c35952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1745096783}
 --- !u!1 &1705661823
 GameObject:
   m_ObjectHideFlags: 0
@@ -27841,7 +27855,7 @@ GameObject:
   - component: {fileID: 1745096787}
   m_Layer: 0
   m_Name: De'aaron_Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

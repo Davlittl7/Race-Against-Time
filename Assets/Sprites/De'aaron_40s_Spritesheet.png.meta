@@ -296,7 +296,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      De'aaron_40s_Spritesheet_0: 5063544671511633139
+      De'aaron_40s_Spritesheet_1: 6960160657556859867
+      De'aaron_40s_Spritesheet_2: -5173688722797461858
+      De'aaron_40s_Spritesheet_3: -1862286450686940483
+      De'aaron_40s_Spritesheet_4: 1547335942494375765
+      De'aaron_40s_Spritesheet_5: -6174415936694179542
+      De'aaron_40s_Spritesheet_6: -8763811350011718978
+      De'aaron_40s_Spritesheet_7: -2027804876413417597
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

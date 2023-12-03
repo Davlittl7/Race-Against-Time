@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e8180f4636921014fa7525ea5f222228
+guid: 0343a9f3bc7f7e34eb4b7df663d0dd97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1088982491853983780
-    second: Bunny_0
+      213: 7056554908762090982
+    second: Dead Businessman 1_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bunny_0
+      name: Dead Businessman 1_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 79
-        width: 138
-        height: 106
+        x: 55
+        y: 87
+        width: 122
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdf6c6e713823e0f0800000000000000
-      internalID: -1088982491853983780
+      spriteID: 6edadc26d4bede160800000000000000
+      internalID: 7056554908762090982
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Bunny_0: -1088982491853983780
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
