@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         movementInput = value.Get<float>();
     }
 
-    void OnTimeStop(InputValue value)
+    void OnTimeStop()
     {
         isTimeStopped = true;
     }
@@ -64,12 +64,6 @@ public class PlayerMovement : MonoBehaviour
             coin++;
             collision.gameObject.SetActive(false);
         }
-
-        /*if (collision.tag == "Death")
-        {
-            lives--;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }*/
 
         if(collision.tag == "Finish")
         {

@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class AutoScrollerCamDown : MonoBehaviour
 {
+    public GameObject player, grayScreen;
     private const double V = 0.05;
     public float step = (float)V;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +17,23 @@ public class AutoScrollerCamDown : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        var camPosition = Camera.main.gameObject.transform.position;
-        camPosition.y -= step;
-        Camera.main.gameObject.transform.position = camPosition;
+        if (player.GetComponent<PlayerMovement>().isTimeStopped == false)
+        {
+            var camPosition = Camera.main.gameObject.transform.position;
+            camPosition.y -= step;
+            Camera.main.gameObject.transform.position = camPosition;
+        } else
+        {
+            StartCoroutine(Stop());
+        }
+ 
+    }
+
+    private IEnumerator Stop()
+    {
+        grayScreen.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        player.GetComponent<PlayerMovement>().isTimeStopped = false;
+        grayScreen.SetActive(false);
     }
 }

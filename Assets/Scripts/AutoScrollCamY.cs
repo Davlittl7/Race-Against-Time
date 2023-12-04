@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AutoScrollCamY : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject player, grayScreen;
     private const double V = 0.05;
     public float step = (float)V;
     // Start is called before the first frame update
@@ -29,7 +29,9 @@ public class AutoScrollCamY : MonoBehaviour
 
     private IEnumerator Stop()
     {
+        grayScreen.SetActive(true);
         yield return new WaitForSeconds(5f);
         player.GetComponent<PlayerMovement>().isTimeStopped = false;
+        grayScreen.SetActive(false);
     }
 }
