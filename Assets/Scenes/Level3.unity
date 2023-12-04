@@ -1148,6 +1148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5b8555dff8ea0d4a941205fad603dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1165214528}
   step: 0.03
 --- !u!1 &654258431
 GameObject:
@@ -39927,6 +39928,7 @@ MonoBehaviour:
   coin: 0
   lives: 1
   isGrounded: 0
+  isTimeStopped: 0
 --- !u!58 &1165214533
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40706,7 +40708,7 @@ GameObject:
   - component: {fileID: 1528512918}
   m_Layer: 0
   m_Name: MP2
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

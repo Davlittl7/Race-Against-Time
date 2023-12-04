@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public int lives = 1;
 
     public bool isGrounded;
+    public bool isTimeStopped = false;
 
     Animator animator;
 
@@ -49,6 +50,11 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue value)
     {
         movementInput = value.Get<float>();
+    }
+
+    void OnTimeStop(InputValue value)
+    {
+        isTimeStopped = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

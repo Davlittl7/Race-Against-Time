@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Balloon Poster_0: -8105402239861187315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dead Businessman 1_0: 7056554908762090982
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
