@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        if (SceneManager.GetActiveScene().buildIndex != 0) radius = 0.79f;
+        if (SceneManager.GetActiveScene().buildIndex != 1) radius = 0.79f;
     }
 
     // Update is called once per frame
