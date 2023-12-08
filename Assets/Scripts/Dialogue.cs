@@ -58,7 +58,7 @@ public class Dialogue : MonoBehaviour
     {
         fadeIn.SetActive(true);
         fadeIn.GetComponent<Animator>().Play("FadeIn");
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -72,8 +72,6 @@ public class Dialogue : MonoBehaviour
         } else
         {
             StartCoroutine(ToNextScene());
-            //gameObject.SetActive(false);
-            //StartCoroutine(ToNextScene());
         }
     }
 }
