@@ -57,8 +57,7 @@ public class Dialogue : MonoBehaviour
     IEnumerator ToNextScene()
     {
         fadeIn.SetActive(true);
-        fadeIn.GetComponent<Animator>().Play("FadeIn");
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
