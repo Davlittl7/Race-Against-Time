@@ -3584,7 +3584,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 366809716}
   fadeIn: {fileID: 1623059069}
-  lines: []
+  lines:
+  - 'De''aaron: Now how in the....hell.......did you get here so fast?'
   textSpeed: 0.1
 --- !u!114 &893050999
 MonoBehaviour:
