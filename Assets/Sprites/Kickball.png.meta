@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kickball_0: -2312286825645868203
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
