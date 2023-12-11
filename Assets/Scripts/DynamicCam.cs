@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DynamicCam : MonoBehaviour
 {
-    public GameObject player, grayScreen;
+    public GameObject player, grayScreen, cam;
     private const double V = 0.05;
-    private int camSwitch = 1;
+    public int camSwitch = 1;
     public float step = (float)V;
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class DynamicCam : MonoBehaviour
     {
         if (player.GetComponent<PlayerMovement>().isTimeStopped == false)
         {
-            var camPosition = Camera.main.gameObject.transform.position;
+            var camPosition = cam.transform.position;            
             switch(camSwitch)
             {
                 case 1:
@@ -32,7 +32,8 @@ public class DynamicCam : MonoBehaviour
                     camPosition.y -= step;
                     break;
             }
-            Camera.main.gameObject.transform.position = camPosition;
+            
+            cam.transform.position = camPosition;
         }
         else
         {
@@ -40,6 +41,15 @@ public class DynamicCam : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "UpTrigger")
+        {
+            camSwitch = 2;
+            Destroy(gameObject);
+        }
+
+    }
     private IEnumerator Stop()
     {
         grayScreen.SetActive(true);
@@ -47,5 +57,8 @@ public class DynamicCam : MonoBehaviour
         player.GetComponent<PlayerMovement>().isTimeStopped = false;
         grayScreen.SetActive(false);
     }
+
+    
+ 
 }
 
