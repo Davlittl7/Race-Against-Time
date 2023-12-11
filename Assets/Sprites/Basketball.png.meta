@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Basketball_0: -4808173364620032369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
