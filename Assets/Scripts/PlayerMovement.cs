@@ -26,12 +26,12 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         SoundManager.instance.Play("BgMusic");
+        if(!PlayerPrefs.HasKey("currLevel")) PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex);
     }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex + 1);
         if (SceneManager.GetActiveScene().name != "Level1") radius = 0.79f;
     }
 
@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(collision.tag == "Finish")
         {
-            //currLevel++;
+            PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex + 1);
             SceneManager.LoadScene(PlayerPrefs.GetInt("currLevel"));
         }
     }
