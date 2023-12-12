@@ -58,7 +58,9 @@ public class Dialogue : MonoBehaviour
     {
         fadeIn.SetActive(true);
         yield return new WaitForSeconds(1.0f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (SceneManager.GetActiveScene().name != "Cutscene5Post")
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else SceneManager.LoadScene(0);
     }
 
     void NextLine()
