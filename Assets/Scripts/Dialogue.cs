@@ -21,6 +21,7 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex);
         textComponent.text = string.Empty;
         StartDialogue();
     }
@@ -60,7 +61,12 @@ public class Dialogue : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         if (SceneManager.GetActiveScene().name != "Cutscene5Post")
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        else SceneManager.LoadScene(0);
+        else
+        {
+            //PlayerPrefs.SetInt("currLevel", 3);
+            PlayerPrefs.DeleteKey("currLevel");
+            SceneManager.LoadScene(0);
+        }
     }
 
     void NextLine()

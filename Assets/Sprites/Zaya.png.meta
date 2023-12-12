@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zaya_0: 6934282605195956216
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
