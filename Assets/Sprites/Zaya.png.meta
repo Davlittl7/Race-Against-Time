@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 52d95dde8e2edd343b32d58df255adb4
+guid: 7fe55b0924f50f842bc1ca6f4d0f9558
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1022301390203436449
-    second: Birthday Sign_0
+      213: 6934282605195956216
+    second: Zaya_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Birthday Sign_0
+      name: Zaya_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 55
-        width: 214
-        height: 166
+        x: 71
+        y: 47
+        width: 114
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f52498f4d4e00d1f0800000000000000
-      internalID: -1022301390203436449
+      spriteID: 8ff00ee3a458b3060800000000000000
+      internalID: 6934282605195956216
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Birthday Sign_0: -1022301390203436449
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
