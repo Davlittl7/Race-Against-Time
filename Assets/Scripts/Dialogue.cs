@@ -16,8 +16,12 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
 
 
-    private int index; 
+    private int index;
 
+    private void Awake()
+    {
+        SoundManager.instance.Play("BgMusic");
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +35,7 @@ public class Dialogue : MonoBehaviour
         if (textComponent.text == lines[index])
         {
             NextLine();
+            SoundManager.instance.Play("Click");
         } else
         {
             StopAllCoroutines();
