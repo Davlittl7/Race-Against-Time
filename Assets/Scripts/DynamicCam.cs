@@ -46,7 +46,14 @@ public class DynamicCam : MonoBehaviour
         if(collision.tag == "UpTrigger")
         {
             camSwitch = 2;
-            Destroy(gameObject);
+            step = 0.03f;
+            Destroy(collision.gameObject);
+        }
+        if(collision.tag == "LeftTrigger")
+        {
+            camSwitch = 1;
+            step = 0.05f;
+            Destroy(collision.gameObject);
         }
 
     }
