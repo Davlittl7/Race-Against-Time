@@ -55,6 +55,12 @@ public class DynamicCam : MonoBehaviour
             step = 0.05f;
             Destroy(collision.gameObject);
         }
+        if (collision.tag == "DownTrigger")
+        {
+            camSwitch = 3;
+            step = 0.03f;
+            Destroy(collision.gameObject);
+        }
 
     }
     private IEnumerator Stop()
