@@ -29092,7 +29092,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920b98e50e9ec2e4fb029050a052f667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: Coin
+    clip: {fileID: 8300000, guid: 4f0f7531c8d623949975b433e3c66af1, type: 3}
+    volume: 0.1
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: BgMusic
+    clip: {fileID: 8300000, guid: 94df3562c8c996542bbafb4eabec3c54, type: 3}
+    volume: 0.5
+    pitch: 0
+    loop: 1
+    source: {fileID: 0}
 --- !u!1 &1724915343
 GameObject:
   m_ObjectHideFlags: 0
