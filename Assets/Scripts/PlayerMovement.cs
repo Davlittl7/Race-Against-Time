@@ -22,6 +22,11 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
 
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        SoundManager.instance.Play("BgMusic");
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -63,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
         {
             coin++;
             collision.gameObject.SetActive(false);
+            SoundManager.instance.Play("Coin");
         }
 
         if(collision.tag == "Finish")
