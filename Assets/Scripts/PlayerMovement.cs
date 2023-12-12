@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex + 1);
         if (SceneManager.GetActiveScene().name != "Level1") radius = 0.79f;
     }
 
@@ -68,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
         if(collision.tag == "Finish")
         {
             //currLevel++;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(PlayerPrefs.GetInt("currLevel"));
         }
     }
 

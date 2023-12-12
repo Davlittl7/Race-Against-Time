@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6900a8ca7edfbdc4281930b048d7927b
+guid: 83b9bf1ca478c0b4d866e49a4179d1e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7966279648777203607
-    second: Demar_0
+      213: -7793312510398098659
+    second: MainMenuBg_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Demar_0
+      name: MainMenuBg_0
       rect:
         serializedVersion: 2
-        x: 87
-        y: 47
-        width: 82
-        height: 146
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9601639ddd6127190800000000000000
-      internalID: -7966279648777203607
+      spriteID: d131d12009798d390800000000000000
+      internalID: -7793312510398098659
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Demar_0: -7966279648777203607
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
