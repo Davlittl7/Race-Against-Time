@@ -16,12 +16,15 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
 
 
-    private int index; 
+    private int index;
 
+    private void Awake()
+    {
+        PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex);
+    }
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex);
         textComponent.text = string.Empty;
         StartDialogue();
     }
@@ -60,10 +63,12 @@ public class Dialogue : MonoBehaviour
         fadeIn.SetActive(true);
         yield return new WaitForSeconds(1.0f);
         if (SceneManager.GetActiveScene().name != "Cutscene5Post")
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        {
+            PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("currLevel");
+        } 
         else
         {
-            //PlayerPrefs.SetInt("currLevel", 3);
             PlayerPrefs.DeleteKey("currLevel");
             SceneManager.LoadScene(0);
         }
