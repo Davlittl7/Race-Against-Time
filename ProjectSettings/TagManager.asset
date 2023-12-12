@@ -10,6 +10,7 @@ TagManager:
   - UpTrigger
   - CamTrigger
   - LeftTrigger
+  - DownTrigger
   layers:
   - Default
   - TransparentFX
