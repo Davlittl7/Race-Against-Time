@@ -5023,7 +5023,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1558541769}
   fadeIn: {fileID: 1536015070}
-  lines: []
+  lines:
+  - "\rMr.Boss: Wow. I\u2019m surprised you made it up here, thought you would be
+    like all the others.\r"
+  - "De\u2019Aaron: You mean like all of the dead ones?\r"
+  - "Mr.Boss: Never mind that right now, we need that type of determination and work
+    ethic here at Company Company!\r"
+  - "Mr.Boss: We can get you started with your very own cubicle! You can even decorate
+    it\u2026slightly.\r"
+  - "Mr.Boss: How does that all sound to you?\r"
+  - "\rDe\u2019Aaron: Um\u2026 I\u2019ll take it. "
+  - "\rMr.Boss: Marvelous! Your shift starts now, get my frozen caramel latte from
+    downstairs and bring it back up here. And please, obtain better work attire.\r\n"
+  - "\rMr.Boss: Now leave me. "
+  - "\rDe\u2019Aaron: (Yay.)"
   textSpeed: 0.1
 --- !u!114 &1728345842
 MonoBehaviour:
