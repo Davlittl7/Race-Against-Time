@@ -20,7 +20,6 @@ public class Dialogue : MonoBehaviour
 
     private void Awake()
     {
-        SoundManager.instance.Play("BgMusic");
         PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex);
     }
     // Start is called before the first frame update
@@ -35,7 +34,6 @@ public class Dialogue : MonoBehaviour
         if (textComponent.text == lines[index])
         {
             NextLine();
-            SoundManager.instance.Play("Click");
         } else
         {
             StopAllCoroutines();
