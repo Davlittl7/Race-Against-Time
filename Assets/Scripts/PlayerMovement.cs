@@ -10,10 +10,11 @@ public class PlayerMovement : MonoBehaviour
     public float jumpSpeed = 13;
     private float radius = 0.77f;
     public int coin;
-    public int lives = 1;
+    public int timeLapse = 3;
 
     public bool isGrounded;
     public bool isTimeStopped = false;
+    public GameObject sound;
 
     Animator animator;
 
@@ -25,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        SoundManager.instance.Play("BgMusic");
+        //SoundManager.instance.Play("BgMusic");
         if(!PlayerPrefs.HasKey("currLevel")) PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex);
     }
     void Start()
@@ -60,7 +61,11 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTimeStop()
     {
-        isTimeStopped = true;
+        if (timeLapse != 0)
+        {
+            isTimeStopped = true;
+            timeLapse--;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -69,10 +74,10 @@ public class PlayerMovement : MonoBehaviour
         {
             coin++;
             collision.gameObject.SetActive(false);
-            SoundManager.instance.Play("Coin");
+            sound.GetComponent<AudioSource>().Play();
         }
 
-        if(collision.tag == "Finish")
+        if (collision.tag == "Finish")
         {
             PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex + 1);
             SceneManager.LoadScene(PlayerPrefs.GetInt("currLevel"));
