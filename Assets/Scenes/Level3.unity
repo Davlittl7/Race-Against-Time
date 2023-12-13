@@ -41597,6 +41597,84 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &841379398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 841379401}
+  - component: {fileID: 841379400}
+  - component: {fileID: 841379399}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &841379399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841379398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: f182e683a1b203643b89d3a005e10ebc, type: 3}
+  m_PointAction: {fileID: -2218715155782833201, guid: f182e683a1b203643b89d3a005e10ebc, type: 3}
+  m_MoveAction: {fileID: -7000429094827927839, guid: f182e683a1b203643b89d3a005e10ebc, type: 3}
+  m_SubmitAction: {fileID: -1687029519573006316, guid: f182e683a1b203643b89d3a005e10ebc, type: 3}
+  m_CancelAction: {fileID: -4598987549834408742, guid: f182e683a1b203643b89d3a005e10ebc, type: 3}
+  m_LeftClickAction: {fileID: -5813973512509960509, guid: f182e683a1b203643b89d3a005e10ebc, type: 3}
+  m_MiddleClickAction: {fileID: 9191549233637821655, guid: f182e683a1b203643b89d3a005e10ebc, type: 3}
+  m_RightClickAction: {fileID: -8901025656670079045, guid: f182e683a1b203643b89d3a005e10ebc, type: 3}
+  m_ScrollWheelAction: {fileID: 7673852151548530075, guid: f182e683a1b203643b89d3a005e10ebc, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 7811548961633271172, guid: f182e683a1b203643b89d3a005e10ebc, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 2239397934942880219, guid: f182e683a1b203643b89d3a005e10ebc, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+--- !u!114 &841379400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841379398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &841379401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841379398}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &848727062
 GameObject:
   m_ObjectHideFlags: 0
@@ -51657,7 +51735,6 @@ GameObject:
   - component: {fileID: 1165214536}
   - component: {fileID: 1165214532}
   - component: {fileID: 1165214539}
-  - component: {fileID: 1165214535}
   - component: {fileID: 1165214537}
   - component: {fileID: 1165214538}
   m_Layer: 0
@@ -51811,21 +51888,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.41
---- !u!114 &1165214535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165214528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
 --- !u!50 &1165214536
 Rigidbody2D:
   serializedVersion: 4
@@ -57630,3 +57692,4 @@ SceneRoots:
   - {fileID: 1296068940}
   - {fileID: 968490480}
   - {fileID: 486035402}
+  - {fileID: 841379401}
