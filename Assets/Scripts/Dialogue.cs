@@ -21,11 +21,11 @@ public class Dialogue : MonoBehaviour
     private void Awake()
     {
         SoundManager.instance.Play("BgMusic");
+        PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex);
     }
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex);
         textComponent.text = string.Empty;
         StartDialogue();
     }
@@ -65,7 +65,10 @@ public class Dialogue : MonoBehaviour
         fadeIn.SetActive(true);
         yield return new WaitForSeconds(1.0f);
         if (SceneManager.GetActiveScene().name != "Cutscene5Post")
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        {
+            PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(PlayerPrefs.GetInt("currLevel"));
+        }
         else
         {
             //PlayerPrefs.SetInt("currLevel", 3);
