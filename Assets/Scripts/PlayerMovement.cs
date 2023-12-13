@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         //SoundManager.instance.Play("BgMusic");
-        if(!PlayerPrefs.HasKey("currLevel")) PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex);
+        PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex);
     }
     void Start()
     {

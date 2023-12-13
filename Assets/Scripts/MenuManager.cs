@@ -22,6 +22,7 @@ public class MenuManager : MonoBehaviour
         pauseMenu.SetActive(false);
     }
 
+
     private void Update()
     {
         if (InputManager.instance.MenuOpenCloseInput)
@@ -61,6 +62,7 @@ public class MenuManager : MonoBehaviour
     private void OpenMainMenu()
     {
         pauseMenu.SetActive(true);
+        mainMenuFirst.SetActive(true);
         EventSystem.current.SetSelectedGameObject(mainMenuFirst);
     } 
 
@@ -81,8 +83,9 @@ public class MenuManager : MonoBehaviour
 
     public void toRestart()
     {
-        CloseAllMenus();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //CloseAllMenus();
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+
     }
 
     public void toMainMenu()
