@@ -3994,18 +3994,18 @@ MonoBehaviour:
   textComponent: {fileID: 1558541769}
   fadeIn: {fileID: 1536015070}
   lines:
-  - 'DeAaron: Crap, I''m going to be so late for this date with Tanya.
+  - 'De''Aaron: Crap, I''m going to be so late for this date with Tanya.
 
 '
-  - 'DeAaron: Gonna have to haul ass if I''m gonna be anywhere close to making it
-    on time for this.'
-  - 'DeAaron: I''d rather make a good first impression than a bad one.
+  - 'De''Aaron: Gonna have to haul ass if I''m gonna be anywhere close to making
+    it on time for this.'
+  - 'De''Aaron: I''d rather make a good first impression than a bad one.
 
 '
-  - 'DeAaron: And that diner lowkey expensive
+  - 'De''Aaron: And that diner lowkey expensive
 
 '
-  - "DeAaron: Hopefully I can find a little something on the way here, these people
+  - "De'Aaron: Hopefully I can find a little something on the way here, these people
     always dropping they money out here \r\n"
   textSpeed: 0.1
 --- !u!114 &1728345842

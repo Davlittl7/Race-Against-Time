@@ -3360,7 +3360,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1558541769}
   fadeIn: {fileID: 1536015070}
-  lines: []
+  lines:
+  - "Mr.Boss: Good morning Mister\u2026 DeAaron is that correct?\r\n"
+  - "De\u2019Aaron: Yes sir! A pleasure to meet with you today!\r\n"
+  - "Mr.Boss: \u2026\u2026\u2026\u2026\u2026\u2026Ugh.\r"
+  - "Mr.Boss: Well, looking at your experience you do seem rather qualified for this
+    position\u2026\r\n"
+  - "De\u2019Aaron: Yes sir, I made sure to\u2026"
+  - "Mr.Boss: I\u2019m not finished talking, and manners will take you a long way.
+    Experience itself won\u2019t cut it DeAndre\r\n"
+  - "De\u2019Aaron: Its DeAaron\u2026\r\n"
+  - "Mr.Boss: Yes DeAaron, DeAndre, Dontavius, whatever suits you. Well anyway you
+    do have the experience, and you do seem rather smart for someone of your ilk\u2026\r\n"
+  - "De\u2019Aaron: \u2026"
+  - "Mr.Boss: Meet me in my office so we can discuss your potential future here at
+    Company Company. Also, will someone come clean that up\u2026Ew.\r\n"
+  - "De\u2019Aaron: (IS THAT A DEAD BODY?!)\r\n"
+  - "De\u2019Aaron: (I need this job. I need this job. I need this job.)\r\n"
   textSpeed: 0.1
 --- !u!114 &1728345842
 MonoBehaviour:
