@@ -2422,7 +2422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Greatest Gift of All
+  m_text: Memory Lane
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3963,7 +3963,17 @@ MonoBehaviour:
   textComponent: {fileID: 1558541769}
   fadeIn: {fileID: 1536015070}
   lines:
-  - 'De''aaron: Alright, they said they have a surprise for me?'
+  - 'DeAaron: Alright the big 4-0.
+
+'
+  - "DeAaron: Damn, I\u2019m old as fuck now\r\n"
+  - "DeAaron: Got random kids calling me \u201Cunc\u201D and shit\r\n"
+  - 'DeAaron: Just turned 40, and now my friends, well friend, and family have a
+    surprise for me
+
+'
+  - "DeAaron: They told me to come from this way, so I guess I should get started
+    and take this trip they called\u2026\u2026\u2026\u2026\u2026"
   textSpeed: 0.1
 --- !u!114 &1728345842
 MonoBehaviour:

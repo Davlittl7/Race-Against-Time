@@ -3682,7 +3682,25 @@ MonoBehaviour:
   textComponent: {fileID: 366809716}
   fadeIn: {fileID: 1623059069}
   lines:
-  - 'De''aaron: Now how in the....hell.......did you get here so fast?'
+  - 'DeAaron: How did you even get here that fast?
+
+'
+  - "Tyrone: How did you get back to your own house that slow? I took an Uber. \r\n"
+  - "DeAaron: Whatever bro\u2026wait how\u2019d you take an uber?\r\n"
+  - "Tyrone: First of all, too many questions, second of all, I\u2019m tired. Ya\u2019ll
+    got some snacks in here?\r\n"
+  - "DeAaron: My mom said she was ordering pizza tonight so don\u2019t worry about
+    it.\r\n"
+  - 'Tyrone: That''s exactly what I needed to hear!
+
+'
+  - "DeAaron: Alright bro let\u2019s get inside i\u2019ve been waiting to play this
+    all day!\r\n"
+  - 'Tyrone: Bet sounds perfect to me!
+
+    
+
+'
   textSpeed: 0.1
 --- !u!114 &893050999
 MonoBehaviour:

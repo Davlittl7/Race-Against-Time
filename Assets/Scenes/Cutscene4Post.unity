@@ -4967,17 +4967,26 @@ MonoBehaviour:
   textComponent: {fileID: 1653691089}
   fadeIn: {fileID: 64082192}
   lines:
-  - 'De''aaron: What am I even doing?'
-  - 'De''aaron: Why am I still up?'
-  - 'De''aaron: Fuck it, what am I even doing with my life?'
-  - 'De''aaron: Work is stressing me out.'
-  - 'De''aaron: The bills are piling up.'
-  - 'De''aaron: I feel like I don''t have a second to catch my breath.'
-  - 'De''aaron: Everything that I am doing feels like it is going nowhere and I don''t
-    feel up to giving time to anything else other then what is required of me.'
-  - 'De''aaron: ............'
-  - 'De''aaron: I can''t keep thinking like this.'
-  - 'De''aaron: I feel like i''m going down a big..........'
+  - 'DeAaron: Oh fuck me, I really need to get out of my head there
+
+'
+  - 'Tanya: Ay De, you alright? I can hear you from across the room, you doing alright?
+
+'
+  - "DeAaron: Honestly, i\u2019m doing better right now but still not the greatest.\r\n"
+  - "DeAaron: \u2026\u2026\u2026\u2026.Can I talk to you? \r\n"
+  - 'DeAaron: About some things that have been really bothering me lately?
+
+'
+  - "Tanya: Of course you can, De. I really want to make sure you\u2019re okay.\r\n"
+  - "DeAaron: \u2026\u2026.Hey Tay?\r\n"
+  - 'Tanya: Yeah?
+
+'
+  - 'DeAaron: I love you.
+
+'
+  - "Tanya: I love you too. \r\n"
   textSpeed: 0.1
 --- !u!114 &1928418407
 MonoBehaviour:

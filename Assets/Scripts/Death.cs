@@ -9,6 +9,8 @@ public class Death : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            if (!PlayerPrefs.HasKey("deathAmt")) PlayerPrefs.SetInt("deathAmt", 1);
+            else PlayerPrefs.SetInt("deathAmt", PlayerPrefs.GetInt("deathAmt") + 1);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
