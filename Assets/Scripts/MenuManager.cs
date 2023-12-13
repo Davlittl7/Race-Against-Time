@@ -1,31 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private GameObject mainMenuCanvasGO;
 
+    [SerializeField] private GameObject pauseMenu;
 
     private bool isPaused;
-    private PlayerMovement player;
+
+    [Header("Scripts to Deactivate on Pause")]
+    [SerializeField] private PlayerMovement player;
 
     [Header("First selected Options")]
     [SerializeField] private GameObject mainMenuFirst;
 
     private void Start()
     {
-        mainMenuCanvasGO.SetActive(false);
+        pauseMenu.SetActive(false);
     }
 
     private void Update()
     {
-        if (!isPaused)
+        if (InputManager.instance.MenuOpenCloseInput)
         {
-           Pause();
-        } else
-        {
-            Unpause();
+            if (!isPaused)
+            {
+                Pause();
+            }
+            else
+            {
+                Unpause();
+            }
         }
     }
 
@@ -35,13 +43,14 @@ public class MenuManager : MonoBehaviour
     {
         isPaused = true;
         Time.timeScale = 0f;
-        //player.enabled = false;
+        player.enabled = false;
         OpenMainMenu();
     }
 
     public void Unpause()
     {
-        isPaused=false;
+        isPaused=false; 
+        player.enabled = true;
         Time.timeScale = 1f;
         CloseAllMenus();
     }
@@ -51,13 +60,35 @@ public class MenuManager : MonoBehaviour
     #region Canvas Activations
     private void OpenMainMenu()
     {
-        mainMenuCanvasGO.SetActive(true);
+        pauseMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(mainMenuFirst);
     } 
 
     private void CloseAllMenus()
     {
-        mainMenuCanvasGO.SetActive(false);
+        pauseMenu.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     #endregion
+
+
+    #region PauseActions
+    public void toResume()
+    {
+        Unpause();
+    }
+
+    public void toRestart()
+    {
+        CloseAllMenus();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void toMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+    #endregion
+
 }

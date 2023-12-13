@@ -11,6 +11,7 @@ public class ButtonManager : MonoBehaviour
     }
     public void toStartNewGame()
     {
+        PlayerPrefs.SetInt("currLevel", 3);
         SceneManager.LoadScene("Cutscene1Pre");
     }
     public void toContinueGame()
@@ -27,5 +28,10 @@ public class ButtonManager : MonoBehaviour
     public void toCredits()
     {
         SceneManager.LoadScene(2);
+    }
+
+    public void toQuit()
+    {
+        Application.Quit();
     }
 }
