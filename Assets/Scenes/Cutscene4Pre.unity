@@ -1338,8 +1338,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.0000009536743}
-  m_SizeDelta: {x: 811.036, y: 134.005}
+  m_AnchoredPosition: {x: 0.000015258789, y: -0.0000009536743}
+  m_SizeDelta: {x: 974.798, y: 129.188}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &579247248
 MonoBehaviour:
@@ -1363,8 +1363,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Down The Rabbit Hole
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 01b44ba9138afda489f0203da9941f4f, type: 2}
+  m_sharedMaterial: {fileID: -9098485523994242539, guid: 01b44ba9138afda489f0203da9941f4f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4975,7 +4975,7 @@ MonoBehaviour:
     feel up to giving time to anything else other then what is required of me.'
   - 'De''Aaron: ............'
   - 'De''Aaron: I can''t keep thinking like this.'
-  - 'De''Aaron: I feel like i''m going down a big..........'
+  - 'De''Aaron: I feel like i''m going..........'
   textSpeed: 0.1
 --- !u!114 &1928418407
 MonoBehaviour:
