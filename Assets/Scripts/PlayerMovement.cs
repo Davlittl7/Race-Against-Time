@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool isGrounded;
     public bool isTimeStopped = false;
-    public GameObject sound;
+    public GameObject sound, fadeIn;
 
     Animator animator;
 
@@ -80,17 +80,33 @@ public class PlayerMovement : MonoBehaviour
         if (collision.tag == "Finish")
         {
             PlayerPrefs.SetInt("currLevel", SceneManager.GetActiveScene().buildIndex + 1);
-            SceneManager.LoadScene(PlayerPrefs.GetInt("currLevel"));
+            StartCoroutine(ToNextScene());
+            //SceneManager.LoadScene(PlayerPrefs.GetInt("currLevel"));
         }
+    }
+
+    IEnumerator ToNextScene()
+    {
+        fadeIn.SetActive(true);
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("currLevel"));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Platform") transform.parent = collision.transform;
+        if (collision.collider.tag == "Platform")
+        {
+            isGrounded = true;
+            transform.parent = collision.transform;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Platform") transform.parent = null;
+        if (collision.collider.tag == "Platform")
+        {
+            isGrounded = false;
+            transform.parent = null;
+        }
     }
 }
