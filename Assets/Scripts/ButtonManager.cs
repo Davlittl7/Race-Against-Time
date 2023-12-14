@@ -12,6 +12,7 @@ public class ButtonManager : MonoBehaviour
     public void toStartNewGame()
     {
         PlayerPrefs.SetInt("currLevel", 3);
+        PlayerPrefs.SetInt("deathAmt", 0);
         SceneManager.LoadScene("Cutscene1Pre");
     }
     public void toContinueGame()
