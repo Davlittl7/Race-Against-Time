@@ -83,9 +83,9 @@ public class MenuManager : MonoBehaviour
 
     public void toRestart()
     {
-        //CloseAllMenus();
+        CloseAllMenus();
+        Unpause();
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
-
     }
 
     public void toMainMenu()

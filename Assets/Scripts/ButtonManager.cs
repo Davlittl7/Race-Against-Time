@@ -16,8 +16,16 @@ public class ButtonManager : MonoBehaviour
     }
     public void toContinueGame()
     {
-        if (!PlayerPrefs.HasKey("currLevel")) SceneManager.LoadScene("Cutscene1Pre");
-        else SceneManager.LoadScene(PlayerPrefs.GetInt("currLevel"));
+        if (!PlayerPrefs.HasKey("currLevel"))
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene("Cutscene1Pre");
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(PlayerPrefs.GetInt("currLevel"));
+        }
     }
 
     public void toHowTo()
